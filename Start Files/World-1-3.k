@@ -5,3 +5,22 @@
  * Let's automate this process with control statements!
  */
 import "turns";
+
+function FillFivePotHoles(){
+	repeat(5){checkForPotHole();}
+}
+
+function checkForPotHole(){
+		move();
+		turnRight();
+		move();
+
+		if(noBeepersPresent()){
+			putBeeper();
+		}
+
+		turnAround();
+		move();
+		turnRight();
+		move();
+}
